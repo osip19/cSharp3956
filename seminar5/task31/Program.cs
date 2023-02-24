@@ -16,7 +16,7 @@ int[] GetRandomArray(int length, int leftRange, int rightRange)
 
     int[] array = new int[length];
 
-    for(int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         array[i] = Random.Shared.Next(leftRange, rightRange + 1);
     }
@@ -29,14 +29,14 @@ int[] GetRandomArray(int length, int leftRange, int rightRange)
     int sumPositive = 0; //сумма положительных чисел
     int sumNegative = 0; //сумма отрицательных чисел
 
-    for(int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        if(array[i] > 0) // если наш элементо положительный
+        if (array[i] > 0) // если наш элементо положительный
         {
             sumPositive = sumPositive + array[i];
             //sumPositive += array[i];
         }
-        else if(array[i] < 0)
+        else if (array[i] < 0)
         {
             sumNegative = sumNegative + array[i];
         }
@@ -45,9 +45,9 @@ int[] GetRandomArray(int length, int leftRange, int rightRange)
     return (sumPositive, sumNegative);
 }
 
-int lengthOfArray = ReadNumber("Задайте длину массива");
-int leftBorder = ReadNumber("Задайте левую границу случайного диапазона");
-int rightBorder = ReadNumber("Задайте правую границу случайного диапазона");
+int lengthOfArray = 12;
+int leftBorder = -9;
+int rightBorder = 9;
 
 int[] myArray = GetRandomArray(lengthOfArray, leftBorder, rightBorder);
 
