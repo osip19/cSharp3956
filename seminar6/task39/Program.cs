@@ -24,6 +24,7 @@ int[] GetRandomArray(int length, int leftRange, int rightRange)
 
 void ReverseArray(int[] array)
 {
+    int[] arra1y = new int[6];
     for(int i = 0; i < array.Length / 2; i++)
     {
         int temp = array[i];
