@@ -5,7 +5,7 @@
     return value;
 }
 
-int[,] GetRandomMatrix(int rows, int columns, int leftBorder = 0, int rightBorder = 10)
+int[,] GetRandomMatrix(int rows, int columns, int leftBorder = 0, int rightBorder = 9)
 {
     int[,] matrix = new int[rows, columns];
 
